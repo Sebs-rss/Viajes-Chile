@@ -1,7 +1,49 @@
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
 #logo-nav {
     height: 20px;
 }
 
-nav {
+/*nav {
     background-color: black;
+}*/
+
+/*.navbar-brand {
+    font-family: 'lobster', bold, sans-serif !important;
+    font-size:37px
+}*/
+
+.navbar-toggler{
+    color: #FFFFFF;
 }
+
+body {
+    /*fondo: dark blue*/
+    background-color: #05091E;
+    height: 100%;
+}
+
+footer {
+     /*fondo: dark blue*/
+    background-color: #0D79AB;
+    height: 100px;
+    margin-top: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    vertical-align: middle;
+}
+
+/*Clase card - h 100 es para las card
+Card img c/height
+
+*/
+
+
