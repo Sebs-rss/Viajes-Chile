@@ -7,12 +7,24 @@
 
 
 #logo-nav {
-    height: 20px;
+    height: 30px;
 }
 
-/*nav {
-    background-color: black;
-}*/
+nav {
+    /*color cielo del norte*/
+    background-color: #257F8D;
+}
+
+nav, span {
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em ;
+}
 
 /*.navbar-brand {
     font-family: 'lobster', bold, sans-serif !important;
@@ -23,22 +35,45 @@
     color: #FFFFFF;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+  }
+
 body {
     /*fondo: dark blue*/
     background-color: #05091E;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
     height: 100%;
+}
+
+/*.content {
+    flex: 1;
+  }*/
+
+#card-custom {
+    background-color: #0D79AB !important;
+    color: white;
 }
 
 footer {
      /*fondo: dark blue*/
     background-color: #0D79AB;
-    height: 100px;
+    /*height: 100px;
     margin-top: 50px;
     text-align: left;
     display: flex;
     flex-direction: row;
     /*justify-content: center;*/
-    vertical-align: middle;
+    /*vertical-align:bottom;*/
+    text-align: left;
+    padding: 1em 0;
 }
 
 /*Clase card - h 100 es para las card
@@ -46,4 +81,18 @@ Card img c/height
 
 */
 
+.carousel {
+    width: 100%;
+  }
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+
+.card-img-top {
+    /*width: 100%;*/
+    height: 200px;
+    object-fit: cover; /* Optional: This will ensure the image covers the area without stretching */
+}
