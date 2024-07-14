@@ -1,4 +1,4 @@
-<!-- Prueba del módulo 2 desarrollo Front End,
+<!-- Prueba del módulo 2 desarrollo Front End: Viajes Chile
 by Sebastián Sánchez -->
 
 <!-- Íconos a usar: 
@@ -103,11 +103,30 @@ by Sebastián Sánchez -->
             <!-- Carrousel - end -->
     </header>
     <main>
-        <section>
-            <h2>Quiénes somos</h2>
-            <div class="col-12">
-
-
+        <section class="pb-4">
+          <h2>¿Quiénes somos?</h2>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <i class="fa-solid fa-plane fa-2x text-light" id="ico_servicios"></i>
+                    <h4 class="my-3 fw-bold text-light">Tíckets aéreos</h4>
+                    <p class="my-3 text-light">
+                        Compra tus pasajes aéreos con nosotros. Te asesoramos y conseguimos los mejores premios, somos especialistas en viajes multi-destinos para que aproveches lo más posible tu tiempo.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="my-3 fw-bold text-light">Tours a la medida</h4>
+                    <p class="my-3 text-light">
+                        Tenemos las mejores rutas preparadas para ti, y las puedes modificar según todos tus intereses y tiempos.
+                    </p>
+                    <i class="fa-solid fa-mountain fa-2x text-light" id="ico_servicios"></i>
+                </div>
+                <div class="col-12 col-md-4">
+                    <i class="fa-solid fa-route fa-2x text-light" id="ico_servicios"></i>
+                    <h4 class="my-3 fw-bold text-light">Asistencia en viaje</h4>
+                    <p class="my-3 text-light">
+                        Viaje tranquila/o y solo disfruta, tenemos las mejores protecciones de seguros y asistencia en ruta.
+                    </p>
+                </div>
             </div>
         </section>
         <section class="container">
@@ -153,13 +172,36 @@ by Sebastián Sánchez -->
                   </div>
             <!-- Cards - end -->
         </section>
-        <section>
+        <section class="container">
             <h2>Contacto</h2>
+            <form class="text-light pb-5">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Asunto</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label mb-2">Mensaje</label>
+                <textarea class="form-control"  placeholder="Cuéntanos"></textarea>
+              </div>
+              <div class="col-12 col-md-2">  
+                <button type="submit" class="btn btn-primary" id="enviar_msj">Enviar</button>
+              </div>
+            </form>
         </section>
     </main>
-    
     <footer class="text-light p-4">
         <span class="h4">Viajes Chile</span>
+        <!-- Íconos rrss -->
+          <div class="column">
+              <i class="fa-solid fa-plane"></i>
+              <i class="fa-solid fa-mountain"></i>
+              <i class="fa-solid fa-route"></i>
+          </div>
+        <!-- ïconos - End -->
     </footer>
 
     <!-- Jquery por CDN -->
