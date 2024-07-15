@@ -33,7 +33,7 @@ by Sebastián Sánchez -->
 </head>
 <body>
         <!-- Navbar - start (fijo arriba) -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="section1">
             <div class="container">
                 <div>
                     <a class="navbar-brand" href="#">
@@ -54,16 +54,16 @@ by Sebastián Sánchez -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" >Inicio</a>
+                            <a class="nav-link active" onclick="scrollToSection('section1')" aria-current="page" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Links te llevan suavemente">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quiénes somos</a>
+                            <a class="nav-link d-none d-md-block" onclick="scrollToSection('section2')" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ir suavemente..">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destacados</a>
+                            <a class="nav-link" onclick="scrollToSection('section3')" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ir suavemente..">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-disabled="false">Contacto</a>
+                            <a class="nav-link" onclick="scrollToSection('section4')" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ir suavemente..">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -103,7 +103,7 @@ by Sebastián Sánchez -->
             <!-- Carrousel - end -->
     </header>
     <main>
-        <section class="pb-4">
+        <section class="pb-4 d-none d-md-block" id="section2">
           <h2>¿Quiénes somos?</h2>
             <div class="row">
                 <div class="col-12 col-md-4">
@@ -129,7 +129,7 @@ by Sebastián Sánchez -->
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="container" id="section3">
             <h2>Destacados</h2>
             <!-- Cards - start -->
                 <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -172,7 +172,7 @@ by Sebastián Sánchez -->
                   </div>
             <!-- Cards - end -->
         </section>
-        <section class="container">
+        <section class="container" id="section4">
             <h2>Contacto</h2>
             <form class="text-light pb-5">
               <div class="mb-3">
@@ -188,7 +188,7 @@ by Sebastián Sánchez -->
                 <textarea class="form-control"  placeholder="Cuéntanos"></textarea>
               </div>
               <div class="col-12 col-md-2">  
-                <button type="submit" class="btn btn-primary" id="enviar_msj">Enviar</button>
+                <button type="submit" class="btn btn-primary" id="msj_confirmacion">Enviar</button>
               </div>
             </form>
         </section>
@@ -197,9 +197,15 @@ by Sebastián Sánchez -->
         <span class="h4">Viajes Chile</span>
         <!-- Íconos rrss -->
           <div class="column">
-            <i class="fa-brands fa-square-x-twitter" id="ico_footer"></i>
-            <i class="fa-brands fa-square-instagram" id="ico_footer"></i>
-            <i class="fa-sharp fa-solid fa-globe" id="ico_footer"></i>
+            <a href="https://www.linkedin.com/in/sebsanchezcl/" class="icon-link text-light" target="_blank" data-bs-toggle="tooltip" data-bs-placement="left" title="A mi perfil en LinkedIn, sígueme :)">
+              <i class="fa-brands fa-linkedin" id="ico_footer"></i>
+            </a>
+            <a href="https://www.instagram.com/seb_rss" class="icon-link text-light" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Aquí estoy en IG">
+              <i class="fa-brands fa-square-instagram" id="ico_footer"></i>
+            </a>
+            <a href="https://sebarsanchez.myportfolio.com/work" class="icon-link text-light" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Aquí irás a mi portfolio">
+              <i class="fa-sharp fa-solid fa-globe" id="ico_footer"></i>
+            </a>
           </div>
         <!-- ïconos - End -->
     </footer>
@@ -213,7 +219,7 @@ by Sebastián Sánchez -->
     crossorigin="anonymous"></script>
 
     <!-- Agregando mis propios scripts -->
-    <script src="assets/js/myscript.js"></script>
+    <script src="assets/js/myscripts.js"></script>
 
     
 </body>

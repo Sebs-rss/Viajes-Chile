@@ -144,7 +144,12 @@ footer {
 }
 
 /*Fomulario*/
-#enviar_msj {
+/*#enviar_msj {
+    background-color: #0D79AB;
+    width: 100%;
+}*/
+
+.btn-primary {
     background-color: #0D79AB;
     width: 100%;
 }

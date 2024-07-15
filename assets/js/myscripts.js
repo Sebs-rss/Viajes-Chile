@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -6,13 +6,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
+});*/
 
 /*toltip*/
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+/*Smooth scroll*/
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({block: "end", behavior: 'smooth' });
+}
+
 
 /*mensaje de enlace externo*/
 $(function(){
@@ -34,11 +40,7 @@ $(function(){
     })
 
     $('#msj_confirmacion').click(function(event){
-        
-        //event.preventDefault();
-        //llamar a funcion que valida
-        //console.log(event);
-        alert("El Correo fue enviado correctamente")
-        //this.submit();
+        alert("Tu mensaje fue enviado correctamente");
         })
 })
+
